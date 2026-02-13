@@ -50,12 +50,12 @@ increases data efficiency.
 
 # Instructions
 
-The code has been tested on Linux and Mac and requires Python 3.11+.
+The code has been tested on Colab Pro+ and requires Python 3.11+. A100GPU 40GB is used and notice that running crafter tasks takes 30.1GB GPU memory.
 
 ## Docker
 
 You can either use the provided `Dockerfile` that contains instructions or
-follow the manual instructions below.
+follow the manual instructions or just run the DreamerExperiment as are mentioned below.
 
 ## Manual
 
@@ -85,6 +85,10 @@ python -m scope.viewer --basedir ~/logdir --port 8000
 ```
 
 Scalar metrics are also writting as JSONL files.
+
+## IPYNB
+Or just run all the code cells by order in DreamerExperiment.ipynb.
+Notice that running crafter training takes more than 4 hours and needs 30.1GB GPU. So remember to change the task to the desired ones such as `--configs atari --task atari_pong` if needed.
 
 # Tips
 
